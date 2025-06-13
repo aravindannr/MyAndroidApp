@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="option_2">Option 2</string>
+    <string name="option_1">Option 1</string>
+    <string name="setting">Setting</string>
+    <string name="notification">Notification</string>
+    <string name="home">Home</string>
+    <string name="todo_list">Todo List</string>
+    <string name="profile_image">Profile Image</string>
+    <string name="aravind">Aravindan</string>
+    <string name="card_item">Card Item</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="notification_page">Notification Page</string>
+    <string name="notification_screen">Notification Screen</string>
+    <string name="setting_page">Setting page</string>
 </resources>

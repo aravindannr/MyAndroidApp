@@ -40,8 +40,11 @@ android {
 }
 
 dependencies {
-
+    // ViewModel
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.fragment.ktx.v162)
     implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.fragment.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
@@ -57,13 +60,13 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
-// Retrofit
-    implementation(libs.retrofit)
-// Converter for JSON
-    implementation(libs.converter.gson)
-// Coroutine support
-    implementation(libs.kotlinx.coroutines.android)
-// Lifecycle ViewModel
-    implementation(libs.androidx.lifecycle.viewmodel.compose)
 
+    // Retrofit
+    implementation(libs.retrofit)
+    // Converter for JSON
+    implementation(libs.converter.gson)
+    // Coroutine support
+    implementation(libs.kotlinx.coroutines.android)
+    // Lifecycle ViewModel
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
 }

@@ -21,10 +21,10 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.myapplication.TodoVIewModel
+import com.example.myapplication.TodoViewModel
 
 @Composable
-fun TodoListScreen(modifier: Modifier = Modifier, viewModel: TodoVIewModel = viewModel()) {
+fun TodoListScreen(modifier: Modifier = Modifier, viewModel: TodoViewModel = viewModel()) {
     val todoList by viewModel.todoList.collectAsState()
     LazyColumn(
         modifier = Modifier
@@ -43,6 +43,14 @@ fun TodoListScreen(modifier: Modifier = Modifier, viewModel: TodoVIewModel = vie
                 shape = MaterialTheme.shapes.medium
             ) {
                 Column(modifier = Modifier.padding(16.dp)) {
+                    Text(
+                        text = "Id: ${todo.id}",
+                        style = TextStyle(
+                            color = Color.White,
+                            fontSize = 20.sp
+                        )
+                    )
+                    Spacer(modifier = Modifier.height(8.dp))
                     Text(
                         text = "Title: ${todo.title}",
                         style = TextStyle(
